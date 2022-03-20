@@ -25,24 +25,24 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**EmpireUserTaggerBots**, \nGrup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim Bu tür botlar için Kod Sahibi ile iletişime geçin @SakirBey1  ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**EtikeTTaggerBot**, \nGrup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim Bu tür botlar için Kod Sahibi ile iletişime geçin @mkaofc  ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/EmpireTaggerBot?startgroup=a'),
-                      Button.url(' 🛠Support', 'https://t.me/EmpireAilesi'),
-                      Button.url('💻 Developer', 'https://t.me/SakirBey1'),
-                      Button.url('✨ Sahibim', 'https://t.me/Moriyonis')]
+                      [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/etikettaggerbot?startgroup=a'),
+                      Button.url(' 🛠Support', 'https://t.me/etikettagsupport'),
+                      Button.url('💻 Developer', 'https://t.me/mkaofc'),
+                      Button.url('✨ Sahibim', 'https://t.me/mkaofc')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**EmpireUserTagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
+  helptext = "**EtikeTTagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/EmpireTaggerBot?startgroup=a'),
-                       Button.url('🛠 Support', 'https://t.me/EmpireAilesi'),
-                       Button.url('💻 Developer', 'https://t.me/SakirBey1'),
-                      Button.url('✨ Sahibim', 'https://t.me/Moriyonis')]
+                      [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/etikettaggerbot?startgroup=a'),
+                       Button.url('🛠 Support', 'https://t.me/etikettagsupport'),
+                       Button.url('💻 Developer', 'https://t.me/mkaofc'),
+                      Button.url('✨ Sahibim', 'https://t.me/mkaofc')]
                     ),
                     link_preview=False
                    )
